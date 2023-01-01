@@ -1,3 +1,56 @@
 .heading{
     color: red;
+    background-image: url("Images/i0mgo_512.jpg");
 }
+.crousal-para{
+    background-color: green;
+    background-size: cover;
+    height: 50vh;
+
+}
+.crousal-image{
+    
+    width: 20vh;
+    height: 40vh;
+    padding-right: 30px;
+    
+}
+.image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ikiea-heading{
+    font-size: 30px;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 20%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
