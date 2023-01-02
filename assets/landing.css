@@ -1,12 +1,21 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+
 .heading{
     color: red;
     background-image: url("Images/i0mgo_512.jpg");
 }
 .crousal-para{
-    background-color: green;
+    background-color: rgb(220, 180, 106);
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
 
+}
+.span{
+  color: white;
+  font-family: sans-serif;
 }
 .crousal-image{
     
@@ -26,20 +35,24 @@
 
 form.example input[type=text] {
     padding: 10px;
+    margin-left: 20px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
     width: 20%;
-    background: #f1f1f1;
+    margin-top: 15px;
+    background: transparent;
   }
   
   form.example button {
     float: left;
-    width: 20%;
+    height: 48px;
+    width: 30px;
     padding: 10px;
-    background: #2196F3;
+    background: #2156f3;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
+    margin-top: 15px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
@@ -47,6 +60,7 @@ form.example input[type=text] {
   
   form.example button:hover {
     background: #0b7dda;
+    color: pink;
   }
   
   form.example::after {
@@ -54,3 +68,45 @@ form.example input[type=text] {
     clear: both;
     display: table;
   }
+  .placeholder{
+    font-size: 25px;
+    color: white;
+  }
+  
+  .navbar{
+    background-color: lightseagreen;
+    width: 100%;
+
+  }
+.book-logo {
+  height: 70px;
+  width: 70px;
+}
+.header{
+  background-image: url("Images/cover/offer.jpg");
+  color: white;
+  min-height: 150px;
+  text-align: center;
+  font-size: 40px;
+}
+.navbar-details{
+  color: white;
+  font-size: 15px;
+}
+.best-seller-container{
+  display: flex;
+  
+  
+}
+.best-seller-image{
+  height: 200px;
+  width: 160px;
+  margin: 30px;
+}
+.best-fictions-container{
+  height: 200px;
+  width: 140px;
+  margin: 30px;
+  display: flex;
+ 
+}
