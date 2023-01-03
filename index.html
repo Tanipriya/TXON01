@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -15,42 +16,43 @@
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 </head>
 
 <body>
-    <h1 class="heading">Hello Rupu</h1>
-
+   <div></div>
     
     <header class="header"> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="navbar">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="assets/Images/cover/booklogo.jpg"
+                  class="book-logo"/>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active" id="navItem1" href="#">
+                    Why Choose Us?
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="nav-link" href="#" id="navItem2">Explore Menu</a>
+                  <a class="nav-link" href="#" id="navItem3">Follow Us</a>
+                  <a class="nav-link" href="#" id="navItem4">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         
         <form class="example" >
             <input type="text" placeholder="Search...." class="placeholder" name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-       
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="navbar">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/Images/cover/booklogo.jpg"
-              class="book-logo"/>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-link active" id="navItem1" href="#">
-                Why Choose Us?
-                <span class="sr-only">(current)</span>
-              </a>
-              <a class="nav-link" href="#" id="navItem2">Explore Menu</a>
-              <a class="nav-link" href="#" id="navItem3">Follow Us</a>
-              <a class="nav-link" href="#" id="navItem4">Contact Us</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,12 +66,14 @@
                 <div class="image-container">
                     <h1 class="ikiea-heading">IKIEA</h1>
                     
+                    
                 </div>
                 
             </div>
             <div class="carousel-item crousal-para">
                 <div class="image-container">
                     <h1 class="investor-heading">The Intelligent Investor</h1>
+                    
                     
                 </div>
             </div>
@@ -97,9 +101,9 @@
     </div>
     
     <div class="p-4">
-        <h1 class="best-sellers-heading">Best sellers</h1>
+        <h1 class="best-sellers-heading p-4">Best sellers</h1>
         <div class="best-seller-container">
-            <img src="assets/Images/best/02.jpg" class="best-seller-image"/>
+            <img src="assets/Images/best/01.jpg" class="best-seller-image"/>
             <img src="assets/Images/best/03.jpg"  class="best-seller-image"/>
             <img src="assets/Images/best/04.jpg" class="best-seller-image"/>
             <img src="assets/Images/best/05.jpg" class="best-seller-image"/>
@@ -109,15 +113,15 @@
         </div>
     </div>
 
-        <div>
-            <h1>Best Fictions Books</h1>
-            <div class="best-fictions-container">
+        <div class="p-4">
+            <h1 class="best-fiction-container p-4">Best Fictions Books</h1>
+            <div class="best-fiction-books-container ">
                 
-                
+                <img src="assets/Images/best/f07.jpg" class="best-seller-image"/>
                 <img src="assets/Images/best/f04.jpg" class="best-seller-image"/>
                 <img src="assets/Images/best/f01.jpg" class="best-seller-image"/>
                 <img src="assets/Images/best/f06.jpg" class="best-seller-image"/>
-                <img src="assets/Images/best/f07.jpg" class="best-seller-image"/>
+                
                 <img src="assets/Images/best/f08.jpg" class="best-seller-image"/>
                 <img src="assets/Images/best/f09.jpg" class="best-seller-image"/>
                 <img src="assets/Images/best/f03.jpg" class="best-seller-image"/>
@@ -125,6 +129,26 @@
 
             </div>
         </div>
+
+        <footer class="footer">
+            <img src="assets/Images/cover/booklogo.jpg" class="footer-logo"/>
+            <div class="footer-container">
+               
+                <p class="footer-paragrapgh">Contact Us</p>
+                <p class="footer-paragrapgh">Help</p>
+                <p class="footer-paragrapgh">Address</p>
+            </div>
+            
+            <div class="icon-container">
+                
+                <i class="fa fa-twitter pr-2" style="font-size:40px; color: rgb(59, 134, 209);"></i>
+                <i class="fa fa-facebook-square pr-3" aria-hidden="true" style=" font-size:40px; color: rgb(59, 134, 209);"></i>
+                <i class="fa fa-instagram pr-3" aria-hidden="true" style=" font-size:40px; color: rgb(59, 134, 209);"></i>
+                <i class="fa fa-linkedin-square" aria-hidden="true" style=" font-size:40px; color: rgb(59, 134, 209);"></i>
+            
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

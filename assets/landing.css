@@ -1,6 +1,6 @@
-.body{
+body{
   margin: 0;
-  padding: 0;
+  
 }
 
 .heading{
@@ -74,18 +74,38 @@ form.example input[type=text] {
   }
   
   .navbar{
-    background-color: lightseagreen;
+    background-color:  #333; 
+    overflow: hidden;
+  
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
     width: 100%;
 
   }
+#navItem1{
+  font-size: 20px;
+  color: grey;
+}
+#navItem2{
+  font-size: 20px;
+  color: grey;
+}
+#navItem3{
+  font-size: 20px;
+  color: grey;
+}
+#navItem4{
+  font-size: 20px;
+  color: grey;
+}
 .book-logo {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
 }
 .header{
-  background-image: url("Images/cover/offer.jpg");
+  background-color: black;
   color: white;
-  min-height: 150px;
+  min-height: 250px;
   text-align: center;
   font-size: 40px;
 }
@@ -95,6 +115,11 @@ form.example input[type=text] {
 }
 .best-seller-container{
   display: flex;
+  background-color: rgb(150, 182, 183);
+  height: 50vh;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
   
   
 }
@@ -103,10 +128,50 @@ form.example input[type=text] {
   width: 160px;
   margin: 30px;
 }
-.best-fictions-container{
+.best-fiction-books-container{
   height: 200px;
   width: 140px;
   margin: 30px;
   display: flex;
  
+}
+.cover-image{
+  width: 80%;
+  min-height: 300px;
+  text-align: center;
+
+}
+.footer{
+  background-color: black;
+  height: 250px;
+
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.footer-logo{
+  width: 50px;
+  margin-top: 10px;
+  text-align: center;
+}
+.footer-paragrapgh{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  
+  
+}
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  margin: 10px;
+  padding: 20px;
 }
