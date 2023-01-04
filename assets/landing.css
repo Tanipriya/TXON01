@@ -1,163 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Nunito:ital@1&display=swap');
+
+*{
+  font-family:  sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  transition: none;
+}
+
+
+
 body{
-  margin: 0;
+  background:  #eee;
+  height: 150vh;
   
 }
-
-.heading{
-    color: red;
-    background-image: url("Images/i0mgo_512.jpg");
+::placeholder{
+  font-size: 2rem;
+  color: grey;
 }
+
+
 .crousal-para{
-    background-color: rgb(220, 180, 106);
+    background: linear-gradient(45deg, #3b85e7 37.47%,   #d8a5dd 93.82%);
     background-size: cover;
-    height: 60vh;
+    height: 75vh;
 
 }
-.span{
+
+
+.span1{
   color: white;
   font-family: sans-serif;
 }
-.crousal-image{
+
     
-    width: 20vh;
-    height: 40vh;
-    padding-right: 30px;
-    
-}
+
 .image-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.ikiea-heading{
-    font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-form.example input[type=text] {
-    padding: 10px;
-    margin-left: 20px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 20%;
-    margin-top: 15px;
-    background: transparent;
+.carousel-image{
+  
+   margin-top: 2rem;
+   height: 400px;
+   width: 250px;
+ }
+.ikiea-heading{
+    font-size: 2rem;
+}
+
+
+  input {
+    background: none;
+    border: .1rem solid grey;
   }
   
-  form.example button {
-    float: left;
-    height: 48px;
-    width: 30px;
-    padding: 10px;
-    background: #2156f3;
-    color: white;
-    font-size: 20px;
-    margin-top: 15px;
-    border: 1px solid grey;
-    border-left: none;
+ input:hover{
+    background: white;
+    color: black;
+  }
+
+ 
+  button{
+    float: right;
+    background: none;
+    color: rgb(9, 92, 226);
+    width: 3rem;
+    border: .1rem solid grey;
     cursor: pointer;
   }
   
-  form.example button:hover {
-    background: #0b7dda;
-    color: pink;
+   button:hover {
+    background: white;
+    color: black;
   }
   
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .placeholder{
-    font-size: 25px;
-    color: white;
-  }
-  
-  .navbar{
-    background-color:  #333; 
-    overflow: hidden;
-  
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
 
-  }
-#navItem1{
-  font-size: 20px;
-  color: grey;
-}
-#navItem2{
-  font-size: 20px;
-  color: grey;
-}
-#navItem3{
-  font-size: 20px;
-  color: grey;
-}
-#navItem4{
-  font-size: 20px;
-  color: grey;
-}
 .book-logo {
   height: 60px;
   width: 60px;
 }
+.abc{
+  margin-top: 80px;
+}
 .header{
   background-color: black;
   color: white;
-  min-height: 250px;
+  min-height: 5rem;
   text-align: center;
   font-size: 40px;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+
 }
-.navbar-details{
+
+
+.fa-shopping-cart {
+  font-size: 4rem;
   color: white;
-  font-size: 15px;
+
 }
-.best-seller-container{
+
+
+.ul {
+  list-style: none;
   display: flex;
-  background-color: rgb(150, 182, 183);
-  height: 50vh;
-  display: flexbox;
+  justify-content: space-between;
+
+  align-items: center;
+  /*justify-content: space-around;*/
+  position: fixed;
+  background-color: black;
+  width: 100%;
+}
+.search{
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.li {
+  margin:  .1rem;
+}
+
+a {
+  font-size: 1.3rem;
+  color: white;
+  padding: .5rem 2rem;
+  border-radius: 1.2rem;
+  transition: .2s linear;
+}
+
+a:hover {
+  background: white;
+  
+  color: green;
+  letter-spacing: .1rem;
+}
+
+
+
+.container{
+  height: 420px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container h1{
+  
+  font-size: 2rem;
+  color: #444;
+ text-align: start;
+  margin-bottom: 1.5rem;
+}
+
+.container .best-seller-container{
+  
+  display: flex;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
+
   
+  
+  /*display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(30rem 1fr));
+  gap: 2rem;*/
+
   
 }
+
+.container .best-seller-container .book{
+  text-align: center;
+  height: 330px;
+  width: 250px;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0 0 0 .1);
+  outline: .1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+
+}
+.container .best-seller-container .book:hover{
+  outline: .2rem solid rgb(138, 96, 96);
+  outline-offset: 0;
+}
+.container .best-seller-container .book:hover img{
+  transform: scale(.9);
+}
+
 .best-seller-image{
-  height: 200px;
+  height: 170px;
   width: 160px;
-  margin: 30px;
+  
 }
-.best-fiction-books-container{
-  height: 200px;
-  width: 140px;
-  margin: 30px;
-  display: flex;
- 
+h3{
+  font-size: 1rem;
+  padding: .5rem 0;
+ color: #444;
 }
+h3:hover{
+  color: #4104cf;
+}
+p{
+  font-size: .8rem;
+
+}
+
 .cover-image{
   width: 80%;
   min-height: 300px;
   text-align: center;
 
 }
-.footer{
-  background-color: black;
-  height: 250px;
 
+.footer{
+  background: #333;
+  height: 12rem;
+  
 }
+
 .footer-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  
 }
-.footer-logo{
-  width: 50px;
-  margin-top: 10px;
-  text-align: center;
-}
+
+
 .footer-paragrapgh{
   color: white;
   font-size: 20px;
@@ -166,7 +244,24 @@ form.example input[type=text] {
   
   
 }
-.icon-container{
+.footer-paragrapgh:hover{
+  color: green;
+  background: rgb(238, 229, 229);
+  border-radius: 10px;
+  height: 38px;
+  width: 120px;
+  margin: 1rem;
+  
+  padding: .5rem 0;
+}
+
+
+.icon a:hover{
+  background: transparent;
+  color: #0b7dda;
+}
+
+.icon{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,4 +269,33 @@ form.example input[type=text] {
   align-content: center;
   margin: 10px;
   padding: 20px;
+ 
 }
+.icon a {
+  background: white;
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 5rem;
+    text-align: center;
+    color: #333;
+    margin-left: 2rem;
+    transition: .2s linear;
+}
+
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  background-color: transparent;
+}
+.carousel-control-next1{
+  right: 0;
+}
+
+.crousal-icon{
+  height: 50px;
+  width: 50px;
+}
+
+
+
