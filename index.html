@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/landing.css">
+    <script  src="assets/index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -23,7 +24,7 @@
 <body>
     
 
-        <header class="header fixed-top ">
+        <header class="header fixed-top " >
             <nav class=" mb-5">
                 <div class="ul">
                     <div >
@@ -100,23 +101,25 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
+ <div class="preview-containesr">
     <div class="container ">
-        <h1 class="best-sellers-heading ">Best sellers</h1>
-        <div class="best-seller-container">
 
-            <div class="book">
+        <h1 class="best-sellers-heading ">Best sellers</h1>
+
+        <div class="best-seller-container" id="bestSellerContainer">
+
+            <div class="book" id="book" data-name="p-1">
                 <img src="assets/Images/best/01.jpg" alt="" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" data-name="p-1">
                 <img src="assets/Images/best/03.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
 
-            <div class="book">
+            <div class="book" data-name="p-1">
                 <img src="assets/Images/best/04.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
@@ -178,7 +181,7 @@
 
         </div>
     </div>
-
+</div>
 
    
 
@@ -195,10 +198,10 @@
 
         <div class="icon-container">
             <div class="icon">
-                <a href=" "> <i class="fa fa-facebook-square "></i></a>
-                <a href=" "><i class="fa fa-instagram"></i></a>
-                <a href=" "><i class="fa fa-twitter "></i></a>
-                <a href=" "> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <i class="fa fa-facebook-square "></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter "></i>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </div>
 
 
@@ -208,6 +211,21 @@
     
 
     </footer>
+    <div class="book-preview" id="bookPreview" data-target="p-1">
+        <div class="preview " id="preview">
+            <i class="fa fa-times"></i>
+            <img src="assets/Images/best/cro02" />
+            <h3>The Intelligent investor</h3>
+            <p>The Intelligent Investor is a book that aims to help people invest in the <br/> stock market while 
+                minimizing their economic risks. <br/>
+                It focuses on longer-term and more risk-averse approaches.</p>
+        
+            <div class="btn">
+                <button class="cart">ADD TO CART</button>
+                <button class="buy">BUY NOW</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 
