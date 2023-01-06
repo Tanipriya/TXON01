@@ -14,79 +14,51 @@ body{
   
 }
 ::placeholder{
-  font-size: 2rem;
+  font-size: 1.8rem;
+  
   color: grey;
 }
-
-
-.crousal-para{
-    background: linear-gradient(45deg, #3b85e7 37.47%,   #d8a5dd 93.82%);
-    background-size: cover;
-    height: 75vh;
-
+.search{
+  height: 50px;
+  border-width: solid;
+  border-color: rgb(222, 61, 240);
+}
+.submittype{
+  height: 50px;
+  width: 80px;
+  margin-top: 5px;
+  border-width: solid;
+  background: rgb(222, 61, 240);
+  border-color: rgb(222, 61, 240);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  text-align: center;
 }
 
 
-.span1{
+input:hover{
+  background: white;
+  border: 2 solid black;
+  color: black;
+}
+
+button{
+  float: right;
+  background: none;
   color: white;
-  font-family: sans-serif;
+  width: 3rem;
+  border: .1rem solid grey;
+  cursor: pointer;
 }
 
-    
-
-.image-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+ button:hover {
+  background: white;
+  color: black;
 }
 
-.carousel-image{
-  
-   margin-top: 2rem;
-   height: 400px;
-   width: 250px;
- }
-.ikiea-heading{
-    font-size: 2rem;
-}
-
-
-  input {
-    background: none;
-    border: .1rem solid grey;
-  }
-  
- input:hover{
-    background: white;
-    color: black;
-  }
-
- 
-  button{
-    float: right;
-    background: none;
-    color: rgb(9, 92, 226);
-    width: 3rem;
-    border: .1rem solid grey;
-    cursor: pointer;
-  }
-  
-   button:hover {
-    background: white;
-    color: black;
-  }
-  
-
-.book-logo {
-  height: 60px;
-  width: 60px;
-}
-.abc{
-  margin-top: 80px;
-}
 .header{
-  background-color: black;
-  color: white;
+  background-color:  white; 
+  color:rgb(222, 61, 240);
   min-height: 5rem;
   text-align: center;
   font-size: 40px;
@@ -94,15 +66,6 @@ body{
   padding-left: 0.5rem;
 
 }
-
-
-.fa-shopping-cart {
-  font-size: 4rem;
-  color: white;
-
-}
-
-
 .ul {
   list-style: none;
   display: flex;
@@ -111,13 +74,10 @@ body{
   align-items: center;
   /*justify-content: space-around;*/
   position: fixed;
-  background-color: black;
+  background-color: white;
   width: 100%;
 }
-.search{
-  display: flex;
-  justify-content: center;
-}
+
 
 .search-bar{
   display: flex;
@@ -130,27 +90,138 @@ body{
 
 a {
   font-size: 1.3rem;
-  color: white;
+  color: rgb(222, 61, 240);
   padding: .5rem 2rem;
   border-radius: 1.2rem;
+  font-weight: bold;
   transition: .2s linear;
 }
 
 a:hover {
-  background: white;
+  background: #333;
   
-  color: green;
+  color: rgb(218, 244, 218);
   letter-spacing: .1rem;
 }
 
-/*.preview-containesr{
+.search-submit{
   margin-left: 3rem;
-  margin-right: 3rem;
-}*/
+  
+}
+
+
+
+.crousal-container{
+    background: linear-gradient(45deg, #3b85e7 37.47%,   #d8a5dd 93.82%);
+    background-size: cover;
+    height: 75vh;
+
+}
+
+
+    
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.carousel-image{
+ 
+   margin-top: 1.5rem;
+   height: 400px;
+   
+ }
+ .investor-heading{
+  color: white;
+ } 
+ .finish-book-image{
+  width: 370px;
+  height: 410px;
+ }
+ .dream-book-image{
+  width: 500px;
+  height: 410px;
+ } 
+.book-dream-content{
+  font-size: 70px;
+  margin-top: 50px;
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+.span-class{
+font-style: italic;
+font-size: 90px;
+font-weight: 300px;
+color: #4D0062;
+}
+.more-read-content{
+  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
+.first-carousel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.read-studty-text{
+  color: #4D0062;
+  font-style:italic;
+  
+  font-weight: bold;
+ font-size: 50px;
+  letter-spacing: .1rem;
+}
+.buynowbook{
+  width: 170px;
+  height: 50px;
+  font-size: 22px;
+  gap: 1rem;
+  background: black;
+  border: #d8a5dd;
+}
+.buynowbook:hover{
+  background: white;
+  color: black;
+  border: purple;
+  border-width: solid;
+}
+.second-carousel{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-exchange{
+  margin-top: 9rem;
+  font-size: 50px;
+  color: black;
+}
+.fa-arrow-right{
+  margin-top: 9rem;
+  font-size: 50px;
+  color: black;
+}
+.abc{
+  margin-top: 80px;
+}
+
+.hr{
+  margin-top: 2rem;
+}
+
+
+
 .container{
   height: 420px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem ;
   
 }
 
@@ -158,7 +229,7 @@ a:hover {
   
   font-size: 2rem;
   color: #444;
- text-align: start;
+ text-align: center;
   margin-bottom: 1.5rem;
 }
 
@@ -169,13 +240,6 @@ a:hover {
   justify-content: center;
   align-items: center;
 
-  
-  
-  /*display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(30rem 1fr));
-  gap: 2rem;*/
-
-  
 }
 
 .container .best-seller-container .book{
@@ -213,13 +277,6 @@ h3:hover{
 }
 p{
   font-size: .8rem;
-
-}
-
-.cover-image{
-  width: 80%;
-  min-height: 300px;
-  text-align: center;
 
 }
 
@@ -267,11 +324,10 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   align-content: center;
   margin: 10px;
   padding: 20px;
-  cursor: pointer;
  
 }
 
@@ -292,27 +348,26 @@ p{
 .carousel-control-prev:hover, .carousel-control-next:hover{
   background-color: transparent;
 }
-.carousel-control-next1{
-  right: 0;
-}
 
 .crousal-icon{
   height: 50px;
   width: 50px;
 }
 
-.book-preview{
+/*.book-preview{
   position: fixed;
   top: 0; left: 0;
   min-height: 100vh;
   width: 100%;
   background: rgba(0 0 0 .8);
-  display: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .book-preview .preview{
   display: none;
+  flex-direction: column;
   padding: 2rem;
   background: rgb(244, 237, 237);
   text-align: center;
@@ -373,4 +428,59 @@ p{
 .cart:hover{
   background: rgb(25, 149, 239);
   color: white;
+}
+*/
+
+.popup-container {
+  width: 400px;
+
+  margin: auto;
+  height: 50vh;
+  background: linear-gradient(45deg, #4D0062 37.47%, #250074 93.82%);
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.open-popup {
+  visibility: visible;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
+.password {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  border: 1 solid grey;
+}
+
+.submit-button:hover {
+  background: rgb(34, 140, 233);
+  color: white;
+  border: 0 solid white;
 }

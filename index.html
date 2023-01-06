@@ -22,14 +22,14 @@
 
 
 <body>
-    
+    <div>
 
         <header class="header fixed-top " >
             <nav class=" mb-5">
                 <div class="ul">
-                    <div >
-                        <input type="text" placeholder="Search.... " name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                    <div class="search-submit">
+                        <input type="text" placeholder="Search.... " class="search">
+                        <button type="submit" class="submittype"><i class="fa fa-search"></i></button>
 
                     </div>
                     <div class="search-bar">
@@ -37,7 +37,7 @@
                         <h2 class="li"><a href="">About</a></h2>
                         <h2 class="li"><a href="">Categories</a></h2>
                         <h2 class="li"><a href="">Blog</a></h2>
-                        <h2 class="li"><a href="">Login</a></h2>
+                        <h2 class="li" onclick="buyBtn()"><a>Login</a></h2>
                     </div>
                 </div>
             </nav>
@@ -55,39 +55,54 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner crousal-container">
             
-            <div class="carousel-item active crousal-para ">
+            <div class="carousel-item active  ">
                 
                 <div class="image-container">
-                    <img src="assets/Images/cover/intelligentcover" class="carousel-image m-5"/>
-                    <h1 class="ikiea-heading">IKIEA</h1>
-
-
+                    
+                    <div >
+                        <img src="assets/Images/cover/finish.jpg"  class="carousel-image finish-book-image m-5"/>
+                        <img src="assets/Images/cover/chetanbhagat.jpg"  class="carousel-image finish-book-image m-2"/>
+                    </div>
+                    <div class="first-carousel">
+                        <h1 class="read-studty-text mb-5 ml-5">Read, Study, Think..!!</h1>
+                        <button class="buynowbook">BUY  NOW</button>
+                    </div>
                 </div>
 
             </div>
-            <div class="carousel-item crousal-para ">
-                <div class="image-container">
+            <div class="carousel-item  ">
+                <div class="second-carousel">
                     <img src="assets/Images/best/01.jpg" class="carousel-image m-5"/>
-                    <h1 class="investor-heading">The Intelligent Investor</h1>
-
-
+                    <i class="fa fa-exchange fa-5x" aria-hidden="true"></i>
+                    <img src="assets/Images/best/06.jpg" class="carousel-image m-5"/>
+                    <i class="fa fa-exchange fa-5x" aria-hidden="true"></i>
+                    <img src="assets/Images/cover/03" class="carousel-image m-5"/>
                 </div>
-            </div>
-            <div class="carousel-item crousal-para">
-                <div class="image-container">
-                    <img src="assets/Images/best/03.jpg" class="carousel-image m-5"/>
-                    <h1 class="investor-heading">Skill <span class="span1">It</span> and Kill It</h1>
+                <h1 class="investor-heading">The Intelligent Investor</h1>
 
-                </div>
+
             </div>
-            <div class="carousel-item crousal-para ">
+            <div class="carousel-item ">
                 <div class="image-container">
                    
-                    <img src="assets/Images/best/05.jpg"  class="carousel-image m-5" />
+                    <img src="assets/Images/cover/download.jpeg" class="carousel-image dream-book-image m-5"/>
+                    
+                    
+                    <h1 class="book-dream-content">A Book is <span class="span-class">Dream </span><br/> that you hold in your<br/> hand</h1>
+                </div>
+                
+            </div>
+            <div class="carousel-item ">
+                <div class="image-container">
+                   
+                    <img src="assets/Images/cover/8791f511b22d3b0abb8b52c575bff083.jpeg"  class="carousel-image m-5" />
               
-                    <h1 class="investor-heading">The Intelligent Investor</h1>
+                    <h1 class="more-read-content">The more that you Read <br/>
+                        the more things you will <span class="span-class">Know</span>.
+                        <br/> The more that your Learn <br/>
+                        the more places you will <span class="span-class">Go </span></h1>
 
                 </div>
             </div>
@@ -101,6 +116,18 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+<div class="p-4">
+
+    <div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray;">
+        <p class="description">“At WIYS, we believe that everyone has a story to tell, and with the “Featured Stories” platform, we help you share your
+             stories with the community. 
+            Take a look at these beautiful stories written by lovely people, which are sure to melt your hearts, just as they did ours.”
+            “At WIYS, we believe that everyone has a story to tell, and with the “Featured Stories” platform, we help you share your stories with
+             the community. Take a look at these beautiful stories written by lovely people, which are sure to melt your hearts, 
+             just as they did ours.”</p>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        </div>
  <div class="preview-containesr">
     <div class="container ">
 
@@ -108,33 +135,34 @@
 
         <div class="best-seller-container" id="bestSellerContainer">
 
-            <div class="book" id="book" data-name="p-1">
+            <div class="book" id="book" onclick="buyBtn()">
                 <img src="assets/Images/best/01.jpg" alt="" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
+                
             </div>
-            <div class="book" data-name="p-1">
+            <div class="book" id="book"  onclick="buyBtn()">
                 <img src="assets/Images/best/03.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
 
-            <div class="book" data-name="p-1">
+            <div class="book" id="book" onclick="buyBtn()" >
                 <img src="assets/Images/best/04.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" id="book" onclick="buyBtn()" >
                 <img src="assets/Images/best/05.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" id="book" onclick="buyBtn()" >
                 <img src="assets/Images/best/i0mgo_512.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" id="book" onclick="buyBtn()">
                 <img src="assets/Images/best/06.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
@@ -148,32 +176,32 @@
         <h1 class="best-sellers-heading ">Best Fictions Books</h1>
         <div class="best-seller-container ">
 
-            <div class="book">
+            <div class="book" onclick="buyBtn()">
                 <img src="assets/Images/best/f04.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" onclick="buyBtn()">
                 <img src="assets/Images/best/f01.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" onclick="buyBtn()">
                 <img src="assets/Images/best/f06.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" onclick="buyBtn()">
                 <img src="assets/Images/best/f08.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
             </div>
-            <div class="book">
+            <div class="book" onclick="buyBtn()">
                 <img src="assets/Images/best/f09.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
-            </div>
-            <div class="book">
+            </div> 
+            <div class="book" onclick="buyBtn()">
                 <img src="assets/Images/best/f03.jpg" class="best-seller-image" />
                 <h3>IKIEA</h3>
                 <p>This book is guide to how you live better</p>
@@ -182,9 +210,17 @@
         </div>
     </div>
 </div>
-
-   
-
+<div class="pt-5">
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray"/>
+    <p class="description mt-3">“At WIYS, we believe that everyone has a story to tell, and with the “Featured Stories” platform, we help you share your
+         stories with the community. 
+        Take a look at these beautiful stories written by lovely people, which are sure to melt your hearts, just as they did ours.”
+        “At WIYS, we believe that everyone has a story to tell, and with the “Featured Stories” platform, we help you share your stories with
+         the community. Take a look at these beautiful stories written by lovely people, which are sure to melt your hearts, 
+         just as they did ours.” </p>
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    </div>
+</div>
     <footer class="footer mt-5">
         <div class="footer-container">
 
@@ -198,35 +234,28 @@
 
         <div class="icon-container">
             <div class="icon">
-                <i class="fa fa-facebook-square "></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-twitter "></i>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <a href = "https://www.facebook.com/tanisha.priya" ><i class="fa fa-facebook-square "></i></a>
+                <a href = "https://www.instagram.com/tanipriya_15/" ><i class="fa fa-instagram"></i></a>
+                <a href = "https://www." ><i class="fa fa-twitter "></i></a>
+                <a href = "https://www.facebook.com/tanisha.priya" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </div>
 
-
-
-
+        </footer>
 
     
-
-    </footer>
-    <div class="book-preview" id="bookPreview" data-target="p-1">
-        <div class="preview " id="preview">
-            <i class="fa fa-times"></i>
-            <img src="assets/Images/best/cro02" />
-            <h3>The Intelligent investor</h3>
-            <p>The Intelligent Investor is a book that aims to help people invest in the <br/> stock market while 
-                minimizing their economic risks. <br/>
-                It focuses on longer-term and more risk-averse approaches.</p>
-        
-            <div class="btn">
-                <button class="cart">ADD TO CART</button>
-                <button class="buy">BUY NOW</button>
-            </div>
+  
+    
+    <div class="popup-container" id="popup">
+        <div>
+            <h1 class="input">Enter Your name</h1>
+            <input type="text" />
+            <h1 class="password">Enter Your Password</h1>
+            <input type="password" />
+            <br />
+            <input type="submit" onclick="closeSubmit()" class="submit-button" />
         </div>
-    </div>
 
+    </div>
 </body>
 
 </html>
