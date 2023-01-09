@@ -108,18 +108,12 @@ a:hover {
   margin-left: 3rem;
   
 }
-
-
-
 .crousal-container{
     background: linear-gradient(45deg, #3b85e7 37.47%,   #d8a5dd 93.82%);
     background-size: cover;
     height: 75vh;
 
 }
-
-
-    
 
 .image-container{
   display: flex;
@@ -223,8 +217,6 @@ color: #4D0062;
   margin-top: 2rem;
 }
 
-
-
 .container{
   height: 420px;
   margin: 0 auto;
@@ -275,15 +267,16 @@ color: #4D0062;
   
 }
 h3{
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: .5rem 0;
- color: #444;
+ color: #222;
+ text-transform: uppercase;
 }
 h3:hover{
   color: #4104cf;
 }
 p{
-  font-size: .8rem;
+  font-size: .9rem;
 
 }
 
@@ -494,3 +487,4 @@ p{
   color: white;
   border: 0 solid white;
 }
+
